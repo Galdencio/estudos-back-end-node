@@ -4,4 +4,6 @@ mongoose.connect('mongodb://serie-node:teste123@ds141704.mlab.com:41704/serie-no
     { useNewUrlParser: true,  useCreateIndex: true });
 mongoose.Promise = global.Promise;
 
+mongoose.set('useFindAndModify', false);
+
 module.exports = mongoose;
